@@ -3,6 +3,8 @@ html{
 }
 
 body{
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-size: 18px;
   margin: 0;
   padding: 0;
@@ -106,6 +108,7 @@ header p{
   font-size: 24px;
   padding: 0 100px;
   text-align: center;
+  line-height: 1.5;
 }
 
 .about-image{
@@ -139,18 +142,18 @@ header p{
    max-height: 700px;
    overflow: hidden;
    grid-column: 1 / -1;
-   grid-row: 6 / 7;
+   grid-row: 5 / 6;
 }
 
 .contact{
    grid-column: 2 / 3;
-   grid-row: 6 / 7;
+   grid-row: 5 / 6;
 }
 
 .text-block{
   align-self: center;
   background-color: rgba(255, 255, 255, .8);
-  border: 5px solid black;
+  border: 10px solid black;
   padding: 30px;
 }
 
