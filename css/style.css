@@ -3,9 +3,9 @@ html{
 }
 
 body{
-  font-family: 'Nunito', sans-serif;
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
   margin: 0;
   padding: 0;
 }
@@ -56,7 +56,7 @@ nav a:hover{
   top:0;
 }
 
-*:focus {
+*:{
   border: 2px solid black;
 }
 
@@ -73,7 +73,7 @@ footer{
 .container{
   display: grid;
   grid-template-columns: 100px 500px 100px;
-  grid-row-gap: 15px;
+  grid-row-gap: 20px;
   /*Provided*/
   grid-template-rows: 30px auto auto auto auto auto 100px;
   width: 100vw;
@@ -87,7 +87,6 @@ footer{
   grid-column: 1 / -1;
   grid-row: 1 / 2;
   /*Provided*/
-  background-color: #ddd;
   padding: 20px 0;
   text-align: left;
 }
@@ -113,10 +112,10 @@ header p{
 
 .about-image{
   background-image: url("../images/about.jpg");
+  max-width: 700px;
+  overflow: hidden;
   grid-column: 1 / -1;
   grid-row: 3 / 4;
-  max-height: 700px;
-  overflow: hidden;
 }
 
 .about{
@@ -125,16 +124,38 @@ header p{
 }
 
 .work-image{
-  background-image: url("../images/method.jpg");
-  max-height: 700px;
+  background-image: url("../images/method.jpg"); 
+  display: flex; 
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   grid-column: 1 / -1;
   grid-row: 4 / 5;
-  overflow: hidden;
+  max-height: 700px;
+  }
+
+.work > img{
+  margin 10px;
+  height: 400px;
 }
 
 .work{
   grid-column: 2 / 3;
-  grid-row: 4/ 5;
+  grid-row: 4 / 5;
+}
+
+.fun-image{
+   background-image: url("../images/fun.jpg");
+   max-height: 700px;
+   overflow: hidden;
+   grid-column: 1 / -1;
+   grid-row: 5 / 6;
+}
+
+.fun{
+   grid-column: 2 / 3;
+   grid-row: 5 / 6;
 }
 
 .contact-image{
@@ -142,33 +163,28 @@ header p{
    max-height: 700px;
    overflow: hidden;
    grid-column: 1 / -1;
-   grid-row: 5 / 6;
+   grid-row: 7 / 8;
 }
 
 .contact{
    grid-column: 2 / 3;
-   grid-row: 5 / 6;
+   grid-row: 7 / 8;
 }
 
 .text-block{
   align-self: center;
-  background-color: rgba(255, 255, 255, .8);
-  border: 10px solid black;
   padding: 30px;
 }
-
-
 
 @media only screen and (min-width: 800px){
 
   .container{
     display: grid;
-    grid-template-columns: 50px auto 500px auto 50px;
-    grid-template-rows: 70px 400px 400px 400px 400px 400px 100px;
+    grid-template-columns: 100px auto 500px auto 100px;
+    grid-template-rows: 70px 500px 500px 500px 500px 500px 100px;
   }
 
   .nav{
-    background-color: #ddd;
     text-align: right;
     display: inline;
     padding-top: 35px;
@@ -190,6 +206,7 @@ header p{
     grid-row: 3 / 4;
   }
 
+/*
   .work-image{
     background-image: url("../images/method.jpg");
     max-height: 700px;
@@ -197,23 +214,54 @@ header p{
     grid-column: 3 / 5;
     grid-row: 4 / 5;
   }
+*/
 
+  .work-image{
+    background-image: url("../images/method.jpg"); 
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    grid-column: 3 / 5;
+    grid-row: 4 / 5;
+    max-height: 700px
+  }
+    
   .work{
     grid-column: 2 / 4;
     grid-row: 4 / 5;
   }
 
-  .contact-image{
-    background-image: url("../images/contact.jpg");
+  img:hover{
+        opacity: .5;
+        transition: .9s;
+  }
+    
+  .fun-image{
+    background-image: url("../images/fun.jpg");
     max-height: 700px;
     overflow: hidden;
     grid-column: 3 / 5;
     grid-row: 5 / 6;
   }
 
-  .contact{
+  .fun{
     grid-column: 2 / 4;
     grid-row: 5 / 6;
+   }
+    
+  .contact-image{
+    background-image: url("../images/contact.jpg");
+    max-height: 700px;
+    overflow: hidden;
+    grid-column: 3 / 5;
+    grid-row: 6 / 7;
+  }
+
+  .contact{
+    grid-column: 2 / 4;
+    grid-row: 6 / 7;
    }
 
 }  /*End the media query*/
