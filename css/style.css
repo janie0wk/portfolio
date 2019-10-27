@@ -8,6 +8,10 @@ body {
     line-height: 1.5;
     margin: 0;
     padding: 0;
+/*
+    overflow-x: hidden;
+    overflow-y: scroll;
+*/
 }
 
 h1,
@@ -15,6 +19,7 @@ h2,
 h3 {
     text-align: center;
 }
+
 h1 {
     font-size: 3.157rem;
     padding: 6rem 0 0.5rem 0;
@@ -77,7 +82,7 @@ footer {
 
 .container {
     display: grid;
-    grid-template-columns: 100px auto 100px;
+    grid-template-columns: auto 400px auto;
     grid-row-gap: 20px;
     /*Provided*/
     grid-template-rows: 30px auto auto auto auto auto 100px;
@@ -108,7 +113,7 @@ header {
     /* Parallax effect */
     height: 400px;
     /* Parallax effect */
-    grid-column: 2;
+    grid-column: 2 / 3;
     grid-row: 2 / 3;
     width: 100vw;
 }
@@ -134,7 +139,7 @@ header {
     grid-row: 5 / 6;
 }
 
-.work-image > img{
+.work-image > img {
     align-items: center;
     justify-content: center;
     height: 100px;
@@ -180,9 +185,10 @@ header {
 
     .container {
         display: grid;
-        grid-template-columns: 350px auto 350px;
+        grid-template-columns: 1fr 2fr 1fr;
         grid-template-rows: 70px auto auto auto auto auto auto 100px;
         grid-row-gap: 30px;
+        width: 100px;
     }
 
     .nav {
@@ -197,12 +203,12 @@ header {
     .about-image {
         background-image: url("../images/about.jpg") max-height: 700px;
         overflow: hidden;
-        grid-column: 2;
+        grid-column: 2 / 3;
         grid-row: 3 / 4;
     }
 
     .about {
-        grid-column: 2;
+        grid-column: 2 / 3;
         grid-row: 3 / 4;
     }
 
@@ -211,12 +217,12 @@ header {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        grid-column: 2;
+        grid-column: 2 / 3;
         grid-row: 5 / 6;
     }
 
     .work {
-        grid-column: 2;
+        grid-column: 2 / 3;
         grid-row: 4 / 5;
     }
 
@@ -229,12 +235,12 @@ header {
         background-image: url("../images/fun.jpg");
         max-height: 700px;
         overflow: hidden;
-        grid-column: 2;
+        grid-column: 2 / 3;
         grid-row: 6 / 7;
     }
 
     .fun {
-        grid-column: 2;
+        grid-column: 2 / 3;
         grid-row: 6 / 7;
     }
 
@@ -242,12 +248,12 @@ header {
         background-image: url("../images/contact.jpg");
         max-height: 700px;
         overflow: hidden;
-        grid-column: 2;
+        grid-column: 2 / 3;
         grid-row: 7 / 8;
     }
 
     .contact {
-        grid-column: 2;
+        grid-column: 2 / 3;
         grid-row: 7 / 8;
     }
 }
