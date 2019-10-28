@@ -8,10 +8,8 @@ body {
     line-height: 1.5;
     margin: 0;
     padding: 0;
-/*
     overflow-x: hidden;
     overflow-y: scroll;
-*/
 }
 
 h1,
@@ -25,12 +23,12 @@ h1 {
     padding: 6rem 0 0.5rem 0;
 }
 
-h2 {
-    font-size: 1.8rem;
+header h2 {
+    font-size: 1.5rem;
 }
 
-h3 {
-    font-size: 1.5rem;
+h2 {
+    font-size: 1.8rem;
 }
 
 p {
@@ -82,7 +80,7 @@ footer {
 
 .container {
     display: grid;
-    grid-template-columns: auto 400px auto;
+    grid-template-columns: 20% 60% 20%;
     grid-row-gap: 20px;
     /*Provided*/
     grid-template-rows: 30px auto auto auto auto auto 100px;
@@ -115,7 +113,6 @@ header {
     /* Parallax effect */
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    width: 100vw;
 }
 
 .about-image {
@@ -185,10 +182,10 @@ header {
 
     .container {
         display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-columns: 25% 50% 25%;
         grid-template-rows: 70px auto auto auto auto auto auto 100px;
         grid-row-gap: 30px;
-        width: 100px;
+        width: 100vw;
     }
 
     .nav {
@@ -201,7 +198,8 @@ header {
     }
 
     .about-image {
-        background-image: url("../images/about.jpg") max-height: 700px;
+        background-image: url("../images/about.jpg");
+        max-height: 700px;
         overflow: hidden;
         grid-column: 2 / 3;
         grid-row: 3 / 4;
