@@ -80,7 +80,7 @@ footer {
 
 .container {
     display: grid;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: auto 400px auto;
     grid-row-gap: 20px;
     /*Provided*/
     grid-template-rows: 30px auto auto auto auto auto 100px;
