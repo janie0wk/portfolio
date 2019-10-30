@@ -82,7 +82,7 @@ footer {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-columns: 1fr 6fr 1fr;
     grid-row-gap: 20px;
     /*Provided*/
     grid-template-rows: 30px auto auto auto auto auto 100px;
