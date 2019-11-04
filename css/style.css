@@ -79,7 +79,7 @@ footer {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-columns: 15% 70% 15%;
     grid-row-gap: 20px;
     grid-template-rows: 30px auto auto auto auto auto auto 100px;
     width: 100vw;
@@ -126,18 +126,14 @@ header {
 }
 
 .work-image {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
     grid-column: 2 / 3;
     grid-row: 5 / 6;
 }
 
 .work-image img {
-    display: inline-block;
     align-items: center;
     justify-content: center;
-    max-height: 8rem;
+    max-height: 4.5rem;
     margin: .04rem;
 }
 
@@ -146,20 +142,17 @@ header {
     grid-row: 4 / 5;
 }
 
-.course-work-image {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+.course-work-image{
     grid-column: 2 / 3;
     grid-row: 7 / 8;
 }
 
 .course-work-image img {
-    display: inline-block;
     align-items: center;
     justify-content: center;
-    max-height: 8rem;
+    max-height: 4.5rem;
     margin: .04rem;
+
 }
 
 .course-work {
@@ -182,6 +175,11 @@ header {
 
 .text-block {
     align-self: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
 }
 
 button {
@@ -212,6 +210,11 @@ button:hover {
         grid-template-rows: 100px auto auto auto auto auto auto auto 100px;
         grid-row-gap: 30px;
         width: 100vw;
+    }
+    
+    .flex-container {
+        display: flex;
+        flex-direction: row;
     }
 
     .nav {
@@ -245,9 +248,6 @@ button:hover {
     }
     
     .work-image {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
         grid-column: 2 / 3;
         grid-row: 5 / 6;
     }
@@ -271,9 +271,6 @@ button:hover {
     }
     
     course-work-image {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
         grid-column: 2 / 3;
         grid-row: 7 / 8;
     }
