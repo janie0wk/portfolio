@@ -86,14 +86,12 @@ footer {
 }
 
 .nav {
-    text-align: center;
     align-self: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    text-align: left;
     grid-column: 1 / -1;
     grid-row: 1 / 2;
     padding: 20px 0;
-    text-align: left;
+
 }
 
 header {
@@ -125,7 +123,14 @@ header {
     grid-row: 3 / 4;
 }
 
+.work {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+
 .work-image {
+    display: flex;
+    flex-direction: row;
     grid-column: 2 / 3;
     grid-row: 5 / 6;
 }
@@ -137,12 +142,14 @@ header {
     margin: .04rem;
 }
 
-.work {
+.course-work {
     grid-column: 2 / 3;
-    grid-row: 4 / 5;
+    grid-row: 6 / 7;
 }
 
-.course-work-image{
+.course-work-image {
+    display: flex;
+    flex-direction: row;
     grid-column: 2 / 3;
     grid-row: 7 / 8;
 }
@@ -152,12 +159,6 @@ header {
     justify-content: center;
     max-height: 4.5rem;
     margin: .04rem;
-
-}
-
-.course-work {
-    grid-column: 2 / 3;
-    grid-row: 6 / 7;
 }
 
 .contact-image {
@@ -175,11 +176,6 @@ header {
 
 .text-block {
     align-self: center;
-}
-
-.flex-container {
-    display: flex;
-    flex-direction: row;
 }
 
 button {
@@ -211,17 +207,11 @@ button:hover {
         grid-row-gap: 30px;
         width: 100vw;
     }
-    
-    .flex-container {
-        display: flex;
-        flex-direction: row;
-    }
 
     .nav {
         text-align: right;
         display: inline;
-        padding-top: 35px;
-        padding-bottom: 35px;
+        padding: 30px 0;
         grid-column: 1 / -1;
         grid-row: 1 / 2;
     }
@@ -239,6 +229,18 @@ button:hover {
         grid-row: 3 / 4;
     }
     
+    .work {
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+    }
+
+    .work-image {
+        display: flex;
+        flex-direction: row;
+        grid-column: 2 / 3;
+        grid-row: 5 / 6;
+    }
+    
     .work-image img {
         display: inline-block;
         align-items: center;
@@ -246,22 +248,19 @@ button:hover {
         max-height: 14.5rem;
         margin: .1rem;
     }
+
+    .course-work {
+        grid-column: 2 / 3;
+        grid-row: 6 / 7;
+    }
     
-    .work-image {
+    course-work-image {
+        display: flex;
+        flex-direction: row;
         grid-column: 2 / 3;
-        grid-row: 5 / 6;
+        grid-row: 7 / 8;
     }
-
-    .work {
-        grid-column: 2 / 3;
-        grid-row: 4 / 5;
-    }
-
-    img:hover {
-        opacity: .5;
-        transition: .9s;
-    }
-
+    
     .course-work-image img {
         display: inline-block;
         align-items: center;
@@ -270,14 +269,9 @@ button:hover {
         margin: .1rem;
     }
     
-    course-work-image {
-        grid-column: 2 / 3;
-        grid-row: 7 / 8;
-    }
-
-    .course-work {
-        grid-column: 2 / 3;
-        grid-row: 6 / 7;
+    img:hover {
+        opacity: .5;
+        transition: .9s;
     }
 
     .contact-image {
