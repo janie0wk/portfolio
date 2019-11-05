@@ -4,8 +4,8 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
-    line-height: 1.5;
+    font-size: 1rem;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
 /*  overflow-x: hidden;
@@ -112,7 +112,6 @@ header {
 
 .about-image {
     background-image: url("../images/about.jpg");
-    max-width: 700px;
     overflow: hidden;
     grid-column: 1 / -1;
     grid-row: 3 / 4;
@@ -130,6 +129,7 @@ header {
 
 .work-image {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     grid-column: 2 / 3;
     grid-row: 5 / 6;
@@ -138,8 +138,7 @@ header {
 .work-image img {
     align-items: center;
     justify-content: center;
-    max-height: 4.5rem;
-    margin: .04rem;
+    margin: .05rem;
 }
 
 .course-work {
@@ -149,6 +148,7 @@ header {
 
 .course-work-image {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     grid-column: 2 / 3;
     grid-row: 7 / 8;
@@ -157,13 +157,11 @@ header {
 .course-work-image img {
     align-items: center;
     justify-content: center;
-    max-height: 4.5rem;
-    margin: .04rem;
+    margin: .05rem;
 }
 
 .contact-image {
     background-image: url("../images/contact.jpg");
-    max-height: 700px;
     overflow: hidden;
     grid-column: 1 / -1;
     grid-row: 8 / 9;
@@ -236,17 +234,17 @@ button:hover {
 
     .work-image {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         grid-column: 2 / 3;
         grid-row: 5 / 6;
     }
     
     .work-image img {
-        display: inline-block;
         align-items: center;
         justify-content: center;
-        max-height: 14.5rem;
-        margin: .1rem;
+        max-width: 15rem;
+        margin: .2rem;
     }
 
     .course-work {
@@ -256,17 +254,17 @@ button:hover {
     
     course-work-image {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         grid-column: 2 / 3;
         grid-row: 7 / 8;
     }
     
-    .course-work-image img {
-        display: inline-block;
+    .course-work-image img { 
         align-items: center;
         justify-content: center;
-        max-height: 14.5rem;
-        margin: .1rem;
+        max-width: 15rem;
+        margin: 0.2rem
     }
     
     img:hover {
