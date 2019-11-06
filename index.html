@@ -51,14 +51,14 @@
             <img src="images/work-6-timg.jpg" alt="work-6" />
             <img src="images/work-7-timg.jpg" alt="work-7" />
             <img src="images/work-8-timg.jpg" alt="work-8" />
-            <img src="images/work-9-timg.jpg" alt="work-9" />            
+            <img src="images/work-9-timg.jpg" alt="work-9" />
         </div>
         <div class="course-work text-block">
             <a name="course-work"></a>
             <h2>COURSE WORK</h2>
             <p>In my first year at the University of Michigan, which was last year, I took all the required foundation courses for first-year art students, including observation drawing, two-dimensional art and design, three-dimensional art and design, and art and design history.<br>
                 I'm currently taking two web design courses, one taught in the School of Information with a heavier focus on the actual programming and encompassing HTML, CSS, and Javascript, and another taught at the Penny W. Stamps School of Art and Design with an emphasis on interaction design, or the aesthetics over programming. I'm also taking Typography, which is a foundation course for graphic design and also a prerequisite for Poster Design and Interaction Design that I plan to take in my junior year. Digital Drawing, a taubman college course focusing on Rhinoceros 3D and Adobe Illustrator, is another course I'm taking. While it is an architecture course, it equates to a 200-level art studio course, fulfilling a course requirement for my BFA degree. <br>
-                    Below features some of the works I have developed and submitted for the courses I'm currently taking. Most of them have been made for my Digital Drawing and Typography classes.</p>
+                Below features some of the works I have developed and submitted for the courses I'm currently taking. Most of them have been made for my Digital Drawing and Typography classes.</p>
         </div>
         <div class="course-work-image">
             <a href="images/course-work-1.pdf" target="_blank"><img src="images/course-work-1-timg.jpg" alt="course-work-1" /></a>
@@ -85,6 +85,23 @@
             <p>&copy; Janie YeongWoo Kim</p>
         </footer>
     </div>
+
+    <script>
+        window.onscroll = function() {
+            stickyNav()
+        };
+
+        var nav = document.querySelector(".nav");
+        var sticky = nav.offsetTop;
+
+        function stickyNav() {
+            if (window.pageYOffset > sticky) {
+                nav.classList.add("sticky");
+            } else {
+                nav.classList.remove("sticky");
+            }
+        }
+    </script>
 </body>
 
 </html>
