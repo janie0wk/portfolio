@@ -86,7 +86,7 @@ footer {
 
 .container {
     display: grid;
-    grid-template-columns: 15% 70% 15%;
+    grid-template-columns: 1fr 10fr 1fr;
     grid-row-gap: 10px;
     grid-template-rows: auto 35px auto auto auto auto auto auto auto auto 80px;
     width: 100vw;
@@ -153,12 +153,12 @@ header {
     max-width: 250px;
 }
 
-.course-work {
+.class {
     grid-column: 2 / 3;
     grid-row: 8 / 9;
 }
 
-.course-work-img {
+.class-img {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -168,7 +168,7 @@ header {
     grid-row: 9 / 10;
 }
 
-.course-work-img img {
+.class-img img {
     display: block;
     margin: .2rem;
     max-width: 250px;
@@ -197,7 +197,7 @@ header {
     /*  top right bottom left*/
     /*  the size of button*/
     padding: .1rem 1.2rem;
-    border: .8px solid black;
+    border: 1.2px solid black;
     display: inline-block;
     margin: 2rem 1rem;
 }
@@ -314,12 +314,12 @@ input[type=submit]:hover {
         filter: hue-rotate(90deg);
     }
 
-    .course-work {
+    .class {
         grid-column: 2 / 3;
         grid-row: 8 / 9;
     }
 
-    course-work-img {
+    class-img {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -329,13 +329,13 @@ input[type=submit]:hover {
         grid-row: 9 / 10;
     }
 
-    .course-work-img img {
+    .class-img img {
         display: block;
         margin: .3rem;
         max-height: 250px;
     }
 
-    .course-work-img img:hover {
+    .class-img img:hover {
         opacity: .5;
         transition: .9s;
     }
