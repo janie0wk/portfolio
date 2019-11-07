@@ -24,7 +24,7 @@ h1 {
 
 .main-h2 {
     animation-name: jump-animation;
-    animation-duration: 3s;
+    animation-duration: 3.5s;
     animation-timing-function: ease;
     animation-delay: 1.5s;
     animation-iteration-count: infinite;
