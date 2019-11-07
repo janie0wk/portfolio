@@ -169,21 +169,19 @@ header {
 }
 
 .course-work-img img {
-    display: block;
+    display: inline;
     margin: .2rem;
     max-width: 250px;
-}
-
-.contact-img {
-    background-image: url("../img/contact.jpg");
-    overflow: hidden;
-    grid-column: 1 / -1;
-    grid-row: 10 / 11;
 }
 
 .contact {
     grid-column: 2 / 3;
     grid-row: 10 / 11;
+}
+
+.contact img {
+    max-width: 49%;
+    padding: .2rem;
 }
 
 .contact-btn {
@@ -196,7 +194,7 @@ header {
     text-decoration: none;
     /*  top right bottom left*/
     /*  the size of button*/
-    padding: .1rem 1.2rem;
+    padding: .15rem 1.2rem;
     border: 1.2px solid black;
     display: inline-block;
     margin: 2rem 1rem;
@@ -278,32 +276,6 @@ input[type=submit]:hover {
         grid-row: 2 / 3;
     }
 
-    .about {
-        grid-column: 2 / 3;
-        grid-row: 4 / 5;
-    }
-
-    .about-img {
-        max-width: 100%;
-        grid-column: 2 / 3;
-        grid-row: 5 / 6;
-    }
-
-    .work {
-        grid-column: 2 / 3;
-        grid-row: 6 / 7;
-    }
-
-    .work-img {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        grid-column: 2 / 3;
-        grid-row: 7 / 8;
-    }
-
     .work-img img {
         margin: .3rem;
         max-height: 250px;
@@ -312,21 +284,6 @@ input[type=submit]:hover {
     .work-img img:hover {
         transition: .9s;
         filter: hue-rotate(90deg);
-    }
-
-    .course-work {
-        grid-column: 2 / 3;
-        grid-row: 8 / 9;
-    }
-
-    course-work-img {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        grid-column: 2 / 3;
-        grid-row: 9 / 10;
     }
 
     .course-work-img img {
@@ -338,19 +295,6 @@ input[type=submit]:hover {
     .course-work-img img:hover {
         opacity: .5;
         transition: .9s;
-    }
-
-    .contact-img {
-        background-image: url("../img/contact.jpg");
-        max-height: 700px;
-        overflow: hidden;
-        grid-column: 2 / 3;
-        grid-row: 10 / 11;
-    }
-
-    .contact {
-        grid-column: 2 / 3;
-        grid-row: 10 / 11;
     }
 }
 
