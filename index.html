@@ -109,10 +109,8 @@
         window.onscroll = function() {
             stickyNav()
         };
-
         var nav = document.querySelector(".nav");
         var sticky = nav.offsetTop;
-
         function stickyNav() {
             if (window.pageYOffset > sticky) {
                 nav.classList.add("sticky");
@@ -120,7 +118,6 @@
                 nav.classList.remove("sticky");
             }
         }
-
     </script>
 </body>
 
