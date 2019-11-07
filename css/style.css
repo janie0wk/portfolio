@@ -22,6 +22,15 @@ h1 {
     
 }
 
+.main-h2 {
+    animation-name: jump-animation;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-delay: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
 .shadow {
     color: white;
     letter-spacing: .1em;
@@ -106,6 +115,10 @@ footer {
     grid-row-gap: 10px;
     grid-template-rows: auto 35px auto auto auto auto auto auto auto 80px;
     width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 .nav {
@@ -287,6 +300,38 @@ input[type=submit]:hover {
 .text-block {
     align-self: center;
 }
+
+@keyframes jump-animation {
+  0%{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  20%{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40%{
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  50%{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  60%{
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  80%{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100%{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
 
 @media only screen and (min-width: 800px) {
     
