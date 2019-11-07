@@ -115,10 +115,6 @@ footer {
     grid-row-gap: 10px;
     grid-template-rows: auto 35px auto auto auto auto auto auto auto 80px;
     width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
 }
 
 .nav {
