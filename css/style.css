@@ -242,7 +242,8 @@ header {
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
 }
 
-.flip-card:hover .flip-card-inner {
+.flip-card:hover .flip-card-inner,
+.flip-card:focus .flip-card-inner {
     transform: rotateY(180deg);
 }
 
@@ -318,8 +319,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: black;
-    opacity: .7;
+    background-color: #464646;
 }
 
 .contact-form {
