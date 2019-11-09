@@ -213,21 +213,62 @@ header {
     grid-row: 9 / 10;
 }
 
-.contact-img {
+.contact-imgs {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.contact img {
-    max-width: 49%;
+.contact-img {
+    display: inline-block;
     padding: 0 .2rem 1rem;
 }
-
+/*
 .contact img:hover {
     -webkit-filter: contrast(180%);
     filter: contrast(180%);
     transition: .9s;
+}
+*/
+
+.flip-card {
+    background-color: transparent;
+    width: 380px;
+    height: 380px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform .9s;
+    transform-style: preserve-3d;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    background-color: black;
+    opacity: .7;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flip-card h1 {
+    font-size: 2rem;
 }
 
 .contact-btn {
@@ -327,7 +368,6 @@ input[type=submit]:hover {
     transform: translateY(0);
   }
 }
-
 
 @media only screen and (min-width: 800px) {
     

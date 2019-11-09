@@ -23,14 +23,14 @@
                 </ul>
             </nav>
         </div>
-        <header id="main">
+        <header>
             <div>
                 <h1 class="shadow">Hi, I'm Janie</h1>
                 <h2>I am an aspiring graphic and UI/UX designer.</h2>
             </div>
         </header>
         <div class="about text-block">
-            <a name="about"></a>
+            <a id="main" name="about"></a>
             <h2 class="main-h2">ABOUT</h2>
             <p>I am a sophomore at the University of Michigan pursuing a bachelor’s degree in Fine arts and a minor in Computer Science to become a graphic and UI/UX designer. I am interested in combining the aesthetic and the technical to create my unique form of art.<br>
                 I was born in Seoul, South Korea, and moved to China at the age of ten. In China, I attended a Korean international school, a Chinese local school, and an American international school. Now, I am studying in the states, where more cultural diversity exists. Having spent more than half of my life in such a global environment, I have become much more receptive to new ideas and "disruptive" in the sense that I strive to think outside of the box. I am confident that my international background can contribute positively to any community.<br> Below is a photo of me at the age of five! It is one of my favorite pictures of myself.</p>
@@ -74,35 +74,63 @@
         <div class="contact text-block">
             <a name="contact"></a>
             <h2 class="main-h2">CONTACT</h2>
+            <div class="contact-imgs">
             <div class="contact-img">
-                <img src="img/contact-1.jpg" alt="yakisoba" />
-                <img src="img/contact-2.jpg" alt="avocado-  burger-and-fries" />
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="img/contact-1.jpg" alt="yakisoba" style="width:380px;" />
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Seafood Avocado Yakisoba</h1>
+                            <p>Restaurant: WOOWAA</p>
+                            <p>Location: Shinsa-dong, Gangnam-gu, Seoul, South Korea</p>
+                            <p>Rating: &#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p>Besides everything aforementioned, I love doodling, cooking, and eating! If you have any questions about my work or need recommendation for good restaurants in Seoul or Ann Arbor, email me or submit a message shown below. Also, feel free to take a look at my resume and learn more about what I do.<br>
-                And lastly, thank you for visiting my website!</p>
-            <a href="mailto:ywkim5964@gmail.com" class="contact-btn">E-MAIL
-            </a>
-            <a href="janieKim_resume.pdf" target="_blank" class="contact-btn">RESUME
-            </a>
-            <h3>Contact Form</h3>
-            <div class="contact-form">
-                <form action="/action_page.php">
-                    <label for="name">Your Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your first and last name">
-
-                    <label for="email">Your Email Address</label>
-                    <input type="text" id="email" name="email" placeholder="Your e-mail address">
-
-                    <label for="msg">Your Message</label>
-                    <textarea id="msg" name="msg" placeholder="Write something" style="height:200px"></textarea>
-
-                    <input type="submit" value="Submit">
-                </form>
+            <div class="contact-img">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="img/contact-2.jpg" alt="avocado-burger-and-fries" style="width:380px;" />
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Avocado Burger &amp; <br> Garlic Butter Fries</h1>
+                            <p>Restaurant: Downtowner</p>
+                            <p>Location: 14, Dosan-daero 53-gil, Gangnam-gu, Seoul 06019, South Korea</p>
+                            <p>Rating: &#9733;&#9733;&#9733;&#9733;</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
             </div>
+        <p>Besides everything aforementioned, I love doodling, cooking, and eating! If you have any questions about my work or need recommendation for good restaurants in Seoul or Ann Arbor, email me or submit a message shown below. Also, feel free to take a look at my resume and learn more about what I do.<br>
+            And lastly, thank you for visiting my website!</p>
+        <a href="mailto:ywkim5964@gmail.com" class="contact-btn">E-MAIL
+        </a>
+        <a href="janieKim_resume.pdf" target="_blank" class="contact-btn">RESUME
+        </a>
+        <h3>Contact Form</h3>
+        <div class="contact-form">
+            <form action="/action_page.php">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Your first and last name">
+
+                <label for="email">Your Email Address</label>
+                <input type="text" id="email" name="email" placeholder="Your e-mail address">
+
+                <label for="msg">Your Message</label>
+                <textarea id="msg" name="msg" placeholder="Write something" style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
         </div>
-        <footer>
-            <p>&copy; Janie YeongWoo Kim</p>
-        </footer>
+    </div>
+    <footer>
+        <p>&copy; Janie YeongWoo Kim</p>
+    </footer>
     </div>
 
     <script>
@@ -111,6 +139,7 @@
         };
         var nav = document.querySelector(".nav");
         var sticky = nav.offsetTop;
+
         function stickyNav() {
             if (window.pageYOffset > sticky) {
                 nav.classList.add("sticky");
@@ -118,6 +147,7 @@
                 nav.classList.remove("sticky");
             }
         }
+
     </script>
 </body>
 
