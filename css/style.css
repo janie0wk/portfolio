@@ -19,7 +19,7 @@ h3 {
 h1 {
     font-size: 3rem;
     color: white;
-    
+
 }
 
 .main-h2 {
@@ -34,16 +34,16 @@ h1 {
 .shadow {
     color: white;
     letter-spacing: .1em;
-    text-shadow: 
-      0 -1px 0 #fff, 
-      0 1px 0 #2e2e2e, 
-      0 2px 0 #2c2c2c, 
-      0 3px 0 #2a2a2a, 
-      0 4px 0 #282828, 
-      0 5px 0 #262626, 
-      0 6px 0 #242424, 
-      0 7px 0 #222, 
-      0 8px 0 #202020;
+    text-shadow:
+        0 -1px 0 #fff,
+        0 1px 0 #2e2e2e,
+        0 2px 0 #2c2c2c,
+        0 3px 0 #2a2a2a,
+        0 4px 0 #282828,
+        0 5px 0 #262626,
+        0 6px 0 #242424,
+        0 7px 0 #222,
+        0 8px 0 #202020;
 }
 
 header h2 {
@@ -215,21 +215,15 @@ header {
 
 .contact-imgs {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
 .contact-img {
-    display: inline-block;
     padding: 0 .2rem 1rem;
 }
-/*
-.contact img:hover {
-    -webkit-filter: contrast(180%);
-    filter: contrast(180%);
-    transition: .9s;
-}
-*/
 
 .flip-card {
     background-color: transparent;
@@ -339,46 +333,52 @@ input[type=submit]:hover {
 }
 
 @keyframes jump-animation {
-  0%{
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  20%{
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40%{
-    -webkit-transform: translateY(-20px);
-    transform: translateY(-20px);
-  }
-  50%{
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  60%{
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
-  80%{
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  100%{
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    20% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    50% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    60% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+
+    80% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
 }
 
 @media only screen and (min-width: 800px) {
-    
+
     h1 {
         font-size: 4rem;
     }
-    
+
     .main-h2 {
         padding-top: 50px;
     }
-    
+
     .container {
         display: grid;
         grid-template-columns: 25fr 50fr 25fr;
