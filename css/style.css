@@ -130,9 +130,9 @@ footer {
     z-index: 1;
 }
 
-.current a{
+.current a {
     color: red;
-    border-bottom:3px solid red;
+    border-bottom: 3px solid red;
 }
 
 header {
@@ -160,7 +160,7 @@ header {
 
 .about-img,
 .work-img,
-.course-work-img{
+.course-work-img {
     grid-column: 2 / 3;
     grid-row: 4 / 5;
 }
