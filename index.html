@@ -108,10 +108,12 @@
             </div>
             <p>Besides everything aforementioned, I love doodling, cooking, and eating! If you have any questions about my work or need recommendation for good restaurants in Seoul or Ann Arbor, email me or submit a message shown below. Also, feel free to take a look at my resume and learn more about what I do.<br>
                 And lastly, thank you for visiting my website!</p>
+            <div class="contact-btns">
             <a href="mailto:ywkim5964@gmail.com" class="contact-btn">E-MAIL
             </a>
-            <a href="janieKim_resume.pdf" target="_blank" class="contact-btn">RESUME
+            <a href="resume.pdf" target="_blank" class="contact-btn">RESUME
             </a>
+            </div>
             <h3>Contact Form</h3>
             <div class="contact-form">
                 <form action="/action_page.php">
@@ -139,7 +141,6 @@
         };
         var nav = document.querySelector(".nav");
         var sticky = nav.offsetTop;
-
         function stickyNav() {
             if (window.pageYOffset > sticky) {
                 nav.classList.add("sticky");
@@ -147,7 +148,6 @@
                 nav.classList.remove("sticky");
             }
         }
-
         // At start, set focus on the first div
         document.getElementsByTagName('div')[0].focus();
     </script>

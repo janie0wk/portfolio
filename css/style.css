@@ -264,20 +264,26 @@ header {
     font-size: 2rem;
 }
 
+.contact-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .contact-btn {
     color: black;
     background-color: whitesmoke;
-    font-size: .9rem;
+    font-size: 1.2rem;
     letter-spacing: .1rem;
-    line-height: 1.6rem;
-    border-radius: 1rem;
+    line-height: 1.9rem;
+    border-radius: 1.2rem;
     text-decoration: none;
     /*  top right bottom left*/
     /*  the size of button*/
     padding: .15rem 1.2rem;
-    border: 1.2px solid black;
+    border: 1.4px solid black;
     display: inline-block;
-    margin: 2rem 1rem;
+    margin: 4rem 1rem 6rem 0;
 }
 
 .contact-btn:hover {
