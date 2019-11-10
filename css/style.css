@@ -327,6 +327,11 @@ input[type=submit]:hover {
     background-color: #464646;
 }
 
+.contact-form h1 {
+    font-size: 1.4rem;
+    padding: 1rem 0 .5rem;
+}
+
 .contact-form {
     border-radius: .8rem;
     background-color: #f2f2f2;
