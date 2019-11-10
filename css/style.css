@@ -212,6 +212,11 @@ header {
     align-items: center;
 }
 
+.contact-img:hover {
+    -webkit-filter: saturate(2);
+    filter: saturate(2);
+}
+
 .contact-img {
     padding: 0 .2rem 1rem;
 }
