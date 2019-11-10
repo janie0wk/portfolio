@@ -226,7 +226,6 @@ header {
 }
 
 .flip-card {
-    background-color: transparent;
     width: 380px;
     height: 380px;
     perspective: 1000px;
@@ -256,8 +255,7 @@ header {
 }
 
 .flip-card-back {
-    background-color: black;
-    opacity: .7;
+    background-color: #464646;
     color: white;
     transform: rotateY(180deg);
 }
