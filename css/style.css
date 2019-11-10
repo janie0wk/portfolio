@@ -108,16 +108,17 @@ nav a:hover {
 
 footer {
     grid-column: 1 / -1;
-    grid-row: 10 / auto;
+    grid-row: 5 / auto;
     padding: 30px;
     text-align: center;
+    font-weight: 500;
 }
 
 .container {
     display: grid;
     grid-template-columns: 10% 80% 10%;
     grid-row-gap: 10px;
-    grid-template-rows: auto 35px auto auto auto 80px;
+    grid-template-rows: auto 35px auto auto 50px;
     width: 100vw;
 }
 
@@ -163,6 +164,7 @@ header {
 .course-work-img {
     grid-column: 2 / 3;
     grid-row: 4 / 5;
+    padding-bottom: 80px;
 }
 
 .about-img img {
@@ -381,7 +383,7 @@ input[type=submit]:hover {
     .container {
         display: grid;
         grid-template-columns: 25% 50% 25%;
-        grid-template-rows: auto 70px auto auto auto auto auto auto auto 100px;
+        grid-template-rows: auto 70px auto auto 80px;
         grid-row-gap: 25px;
         width: 100vw;
     }
@@ -411,6 +413,12 @@ input[type=submit]:hover {
     .course-work-img img:hover {
         opacity: .5;
         transition: .9s;
+    }
+
+    .about-img,
+    .work-img,
+    .course-work-img {
+        padding-bottom: 150px;
     }
 }
 
