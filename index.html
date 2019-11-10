@@ -7,6 +7,20 @@
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151939101-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-151939101-1');
+
+    </script>
+
     <title>Janie Kim</title>
 </head>
 
@@ -90,10 +104,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="contact-img" >
+                <div class="contact-img">
                     <div class="flip-card" tabindex="7">
                         <div class="flip-card-inner">
-                            <div class="flip-card-front" >
+                            <div class="flip-card-front">
                                 <img src="img/contact-2.jpg" alt="avocado-burger-and-fries" style="width:350px;" />
                             </div>
                             <div class="flip-card-back">
@@ -109,10 +123,10 @@
             <p>Besides everything aforementioned, I love doodling, cooking, and eating! If you have any questions about my work or need recommendation for good restaurants in Seoul or Ann Arbor, email me or submit a message shown below. Also, feel free to take a look at my resume and learn more about what I do.<br>
                 And lastly, thank you for visiting my website!</p>
             <div class="contact-btns">
-            <a href="mailto:ywkim5964@gmail.com" class="contact-btn">E-MAIL
-            </a>
-            <a href="resume.pdf" target="_blank" class="contact-btn">RESUME
-            </a>
+                <a href="mailto:ywkim5964@gmail.com" class="contact-btn">E-MAIL
+                </a>
+                <a href="resume.pdf" target="_blank" class="contact-btn">RESUME
+                </a>
             </div>
             <h3>Contact Form</h3>
             <div class="contact-form">
@@ -141,6 +155,7 @@
         };
         var nav = document.querySelector(".nav");
         var sticky = nav.offsetTop;
+
         function stickyNav() {
             if (window.pageYOffset > sticky) {
                 nav.classList.add("sticky");
@@ -150,6 +165,7 @@
         }
         // At start, set focus on the first div
         document.getElementsByTagName('div')[0].focus();
+
     </script>
 </body>
 
