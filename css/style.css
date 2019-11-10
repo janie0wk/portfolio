@@ -72,12 +72,12 @@ p {
 
 nav ul {
     list-style-type: none;
-
 }
 
 nav li {
     display: inline;
     padding-right: 1.5rem;
+    letter-spacing: .1rem;
 }
 
 nav a {
@@ -276,6 +276,7 @@ header {
 
 .contact-btn {
     color: black;
+    font-weight: 600;
     background-color: whitesmoke;
     font-size: 1.2rem;
     letter-spacing: .1rem;
@@ -285,7 +286,7 @@ header {
     /*  top right bottom left*/
     /*  the size of button*/
     padding: .15rem 1.2rem;
-    border: 1.4px solid black;
+    border: .09rem solid black;
     display: inline-block;
     margin: 4rem 1rem 6rem 0;
 }
@@ -331,8 +332,11 @@ input[type=submit]:hover {
 }
 
 .contact-form h1 {
+    color: black;
+    font-weight: 600;
+    letter-spacing: .1rem;
     font-size: 1.4rem;
-    padding: 1rem 0 .5rem;
+    padding: .3rem;
 }
 
 .contact-form {
