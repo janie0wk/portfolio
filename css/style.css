@@ -132,8 +132,8 @@ footer {
 }
 
 .current a {
-    color: red;
-    border-bottom: 3px solid red;
+    color: #8b0000;
+    border-bottom: 3px solid #8b0000;
 }
 
 header {
