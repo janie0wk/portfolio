@@ -111,7 +111,7 @@ footer {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-columns: 10% 80% 10%;
     grid-row-gap: 10px;
     grid-template-rows: auto 35px auto auto auto auto auto auto auto 80px;
     width: 100vw;
