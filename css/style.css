@@ -133,6 +133,7 @@ footer {
     position: fixed;
     width: 100vw;
     top: 0;
+    z-index: 1;
 }
 
 header {
@@ -143,7 +144,6 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    width: 100vw;
     grid-column: -1 / 1;
     grid-row: 1 / 1;
     display: flex;
