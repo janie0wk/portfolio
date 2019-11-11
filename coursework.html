@@ -56,9 +56,28 @@
             <a href="img/course-work-5.pdf" target="_blank"><img src="img/course-work-5-timg.jpg" alt="course-work-5" /></a>
             <a href="img/course-work-6.pdf" tasrget="_blank"><img src="img/course-work-6-timg.jpg" alt="course-work-6" /></a>
         </div>
+    </div>
+
         <footer>
             <p>&copy; Janie YeongWoo Kim</p>
         </footer>
+
+        <script>
+            window.onscroll = function() {
+                stickyNav()
+            };
+            var nav = document.querySelector(".nav");
+            var sticky = nav.offsetTop;
+
+            function stickyNav() {
+                if (window.pageYOffset > sticky) {
+                    nav.classList.add("sticky");
+                } else {
+                    nav.classList.remove("sticky");
+                }
+            }
+
+        </script>
 </body>
 
 </html>
